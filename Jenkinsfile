@@ -30,7 +30,7 @@ pipeline {
          stage('Login Dockerhub') {
 
 	    steps {
-		sh 'docker login -u siwar3398 -p 203JFT1766'
+		sh 'docker login -u siwar3398 -p 203jft1766'
 	 }
 	}
          stage('docker-registry') {
