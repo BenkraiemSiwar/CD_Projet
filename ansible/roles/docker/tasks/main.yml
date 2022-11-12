@@ -1,0 +1,19 @@
+---
+# tasks file for docker
+- name: create image docker
+  docker_image:
+   name: ProjetCD
+   build: 
+    path: /var/lib/jenkins/workspace/Projet_CD
+    pull: no
+   source: build
+   state: present
+   force_source: true
+- name: run container docker
+  docker_container:
+   name: ProjetCD_container
+   image: ProjetCD:latest
+   state: started
+   recreate: true
+   ports:
+    - "4200:80"
