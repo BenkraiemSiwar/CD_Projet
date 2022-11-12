@@ -1,0 +1,14 @@
+---
+# tasks file for docker-registy
+- name: log into docker hub regitry
+  docker_login:
+   email: "siwar.benkraiem@esprit.tn"
+   username: "siwar3398"
+   password: "203JFT0527"
+   
+- name: tag and push to docker hub
+  docker_image:
+   name: ProjetCD:latest
+   repository: siwar3398/devops
+   push: yes
+   source: local
