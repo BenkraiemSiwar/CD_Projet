@@ -4,11 +4,11 @@
   docker_login:
    email: "siwar.benkraiem@esprit.tn"
    username: "siwar3398"
-   password: "203JFT0527"
+   password: "203jft1766"
    
 - name: tag and push to docker hub
   docker_image:
-   name: ProjetCD:latest
+   name: myapp:latest 
    repository: siwar3398/devops
    push: yes
    source: local

@@ -11,7 +11,7 @@
    force_source: true
 - name: run container docker
   docker_container:
-   name: ProjetCD_container
+   name: myapp_container
    image: ProjetCD:latest
    state: started
    recreate: true
